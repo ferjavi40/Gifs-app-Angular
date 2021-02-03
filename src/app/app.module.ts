@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';//este es para las peticiones Http
+
 
 import { AppComponent } from './app.component';
 //Modules
@@ -14,8 +16,10 @@ import { GifsModule } from './gifs/gifs.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     SharedModule,
     GifsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
