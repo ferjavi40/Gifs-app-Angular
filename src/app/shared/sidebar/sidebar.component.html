@@ -7,6 +7,7 @@
     <div class="list-group list-reset text-center">
 
         <a *ngFor="let historia of historial"
+        (click)="buscar(historia)"
         href="#" class="list-group-item list-group-item-action">
             {{historia |titlecase}}
         </a>
